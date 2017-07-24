@@ -16,8 +16,8 @@ BJP 7/21/17"""
 
 import argparse
 from pathlib import Path, PurePath
-
-TERRAFORM_VERSION_SUPPORTED = "0.9"
+ 
+TERRAFORM_VERSION_SUPPORTED = "~>0.9"
 
 def Main():
     """ Main()"""
@@ -54,7 +54,7 @@ def CreateModule(module):
                 print("\tcreated inputs.tf...")
             elif tfFile == "main.tf":
                 theFile.write("""terraform {{
-  required_version = \"~>{0}\"
+  required_version = \"{0}\"
 }}
 {1}
 {2}
