@@ -1,4 +1,4 @@
-# Simple Terraform Module Initialization
+# Terraform Module Initialization
 
 #### This script creates tf module stub in the way I like (for now)
 
